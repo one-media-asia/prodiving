@@ -15,7 +15,7 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (formData.password !== "divepro2024") {
+    if (formData.password !== "prodiving2026") {
       alert("Invalid password. Please contact us for access.");
       return;
     }
@@ -51,10 +51,10 @@ const ContactSection = () => {
               <div>
                 <h3 className="font-heading font-bold text-foreground mb-1">Email</h3>
                 <a
-                  href="mailto:bas@divepro.asia"
+                  href="mailto:bas@prodiving.asia"
                   className="text-primary hover:text-primary/80 transition-colors"
                 >
-                  bas@divepro.asia
+                  bas@prodiving.asia
                 </a>
               </div>
             </div>
