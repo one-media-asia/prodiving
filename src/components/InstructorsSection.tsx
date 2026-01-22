@@ -2,16 +2,17 @@ import { Award, Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const instructors = [
-  {
-    name: "M. Soworka",
-    title: "Course Director",
-    specialties: ["Drinking", "Drinking", "Drinking"],
-    experience: "15+ Years",
-  },
+ 
    {
     name: "Bas",
     title: "Course Director",
-    specialties: ["Open Water Intructor", "Advanced", "Rescue"],
+    specialties: "No 1 Course Director in Asia", "Advanced Womanizer", "Rescue"],
+    experience: "15+ Years",
+  },
+   {
+    name: "M. Soworka",
+    title: "Course Director",
+    specialties: ["Drinking", "Drinking", "Drinking"],
     experience: "15+ Years",
   },
   {
