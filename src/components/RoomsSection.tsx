@@ -36,12 +36,14 @@ const rooms = [{
   image: 4
 }];
 const roomImages: Record<number, string> = {
-  1: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=500&fit=crop", // Standard room
-  2: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=400&h=500&fit=crop", // Deluxe room
-  3: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=400&h=500&fit=crop", // Superior room
-  4: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&h=500&fit=crop", // Luxury suite
+  1: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=500&fit=crop",
+  // Standard room
+  2: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=400&h=500&fit=crop",
+  // Deluxe room
+  3: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=400&h=500&fit=crop",
+  // Superior room
+  4: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&h=500&fit=crop" // Luxury suite
 };
-
 const RoomsSection = () => {
   return <section id="rooms" className="py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -58,7 +60,7 @@ const RoomsSection = () => {
           </p>
           <div className="mt-4 inline-flex items-center gap-2 bg-accent/10 text-accent-foreground px-4 py-2 rounded-full">
             <Wind className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium bg-secondary text-secondary-foreground">A/C Available: +300 THB/night</span>
+            <span className="text-sm font-medium text-secondary-foreground bg-background">A/C Available: +300 THB/night</span>
           </div>
         </div>
 
