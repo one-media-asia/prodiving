@@ -24,7 +24,7 @@ const Header = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-primary-foreground font-heading font-bold text-xl tracking-tight">
-                DivePro
+                Pro Diving Asia
               </span>
               <span className="text-primary-foreground/80 text-xs font-light tracking-wider">
                 ASIA
