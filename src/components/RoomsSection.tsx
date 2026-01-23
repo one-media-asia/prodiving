@@ -60,7 +60,7 @@ const RoomsSection = () => {
           </p>
           <div className="mt-4 inline-flex items-center gap-2 bg-accent/10 text-accent-foreground px-4 py-2 rounded-full">
             <Wind className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium text-secondary-foreground bg-primary">A/C Available: +300 THB/night</span>
+            <span className="text-sm font-medium text-secondary-foreground bg-muted">A/C Available: +300 THB/night</span>
           </div>
         </div>
 
