@@ -30,16 +30,8 @@ const Footer = () => {
               <img 
                 src="https://divinginasia.com/images/logo.avif" 
                 alt="Pro Diving Logo" 
-                className="h-10 w-auto"
+                className="h-16 w-auto"
               />
-              <div className="flex flex-col">
-                <span className="text-primary-foreground font-heading font-bold text-xl">
-                  ProDiving
-                </span>
-                <span className="text-primary-foreground/80 text-xs tracking-wider">
-                  ASIA
-                </span>
-              </div>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed mb-4">
               Your gateway to underwater adventures and tropical relaxation in beautiful Koh Tao, Thailand.
