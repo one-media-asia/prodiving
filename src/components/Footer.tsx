@@ -1,4 +1,4 @@
-import { Mail, MapPin, Heart } from "lucide-react";
+import { Mail, MapPin, Heart, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -95,6 +95,15 @@ const Footer = () => {
               >
                 <Mail className="w-4 h-4" />
                 bas@prodiving.asia
+              </a>
+              <a
+                href="https://wa.me/66898547841"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors"
+              >
+                <MessageCircle className="w-4 h-4" />
+                WhatsApp Chat
               </a>
               <div className="p-4 bg-primary-foreground/10 rounded-lg">
                 <p className="text-primary-foreground text-sm font-medium mb-1">
