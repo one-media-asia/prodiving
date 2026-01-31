@@ -1,4 +1,4 @@
-import { Mail, MapPin, Clock, Lock, Facebook, Instagram, MessageCircle } from "lucide-react";
+import { Mail, MapPin, Clock, Facebook, Instagram, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -9,16 +9,10 @@ const ContactSection = () => {
     name: "",
     email: "",
     message: "",
-    password: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    if (formData.password !== "divepro2024") {
-      alert("Invalid password. Please contact us for access.");
-      return;
-    }
 
     const subject = `Contact Form: ${formData.name}`;
     const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
@@ -179,24 +173,6 @@ const ContactSection = () => {
                 rows={4}
                 className="w-full resize-none"
               />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-foreground mb-2 flex items-center gap-2">
-                <Lock className="w-4 h-4" />
-                Access Password
-              </label>
-              <Input
-                type="password"
-                value={formData.password}
-                onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                placeholder="Enter access password"
-                required
-                className="w-full"
-              />
-              <p className="text-xs text-muted-foreground mt-1">
-                Contact us to receive the access password
-              </p>
             </div>
 
             <Button
