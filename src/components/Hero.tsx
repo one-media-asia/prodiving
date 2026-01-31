@@ -56,7 +56,7 @@ const Hero = () => {
               className="bg-primary-foreground text-ocean-mid hover:bg-primary-foreground/90 font-heading font-semibold px-8 py-6 text-lg shadow-ocean"
               asChild
             >
-              <a href="#rooms">View Accommodation</a>
+              {/* <a href="#rooms">View Accommodation</a> */}
             </Button>
             <Button
               size="lg"
