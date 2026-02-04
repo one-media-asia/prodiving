@@ -19,6 +19,8 @@ const ContactSection = () => {
     message: "",
   });
 
+  const [isFallbackOpen, setIsFallbackOpen] = useState(false);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -35,8 +37,6 @@ const ContactSection = () => {
     // Show fallback after short delay so user can dismiss if mail client opened
     setTimeout(() => setIsFallbackOpen(true), 1100);
   };
-
-  const [isFallbackOpen, setIsFallbackOpen] = useState(false);
 
   const copyToClipboard = async (text: string) => {
     try {
@@ -211,53 +211,53 @@ const ContactSection = () => {
               Send Message
             </Button>
           </form>
+
+          <Dialog open={isFallbackOpen} onOpenChange={setIsFallbackOpen}>
+            <DialogContent>
+              <DialogHeader>
+                <DialogTitle>Mail Client Not Detected?</DialogTitle>
+                <DialogDescription>
+                  If your mail application didn't open, you can copy the message and send it manually, or click the link to open your mail client.
+                </DialogDescription>
+              </DialogHeader>
+
+              <div className="mt-4 space-y-3">
+                <div>
+                  <p className="text-sm font-medium">Recipient</p>
+                  <div className="flex items-center gap-2">
+                    <a href="mailto:bas@prodiving.asia" className="text-primary">bas@prodiving.asia</a>
+                    <Button size="sm" variant="outline" onClick={() => copyToClipboard("bas@prodiving.asia")}>
+                      Copy
+                    </Button>
+                  </div>
+                </div>
+
+                <div>
+                  <p className="text-sm font-medium">Message</p>
+                  <textarea
+                    readOnly
+                    value={`Subject: Contact Form: ${formData.name}\n\n${formData.message}`}
+                    className="w-full rounded-md border px-3 py-2 text-sm"
+                    rows={6}
+                  />
+                  <div className="mt-2">
+                    <Button size="sm" variant="outline" onClick={() => copyToClipboard(`Subject: Contact Form: ${formData.name}\n\n${formData.message}`)}>
+                      Copy Message
+                    </Button>
+                  </div>
+                </div>
+              </div>
+
+              <DialogFooter className="mt-4">
+                <Button asChild>
+                  <a href={`mailto:bas@prodiving.asia?subject=${encodeURIComponent(`Contact Form: ${formData.name}`)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`}>Open Mail Client</a>
+                </Button>
+                <Button variant="ghost" onClick={() => setIsFallbackOpen(false)}>Close</Button>
+              </DialogFooter>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
-
-        <Dialog open={isFallbackOpen} onOpenChange={setIsFallbackOpen}>
-          <DialogContent>
-            <DialogHeader>
-              <DialogTitle>Mail Client Not Detected?</DialogTitle>
-              <DialogDescription>
-                If your mail application didn't open, you can copy the message and send it manually, or click the link to open your mail client.
-              </DialogDescription>
-            </DialogHeader>
-
-            <div className="mt-4 space-y-3">
-              <div>
-                <p className="text-sm font-medium">Recipient</p>
-                <div className="flex items-center gap-2">
-                  <a href="mailto:bas@prodiving.asia" className="text-primary">bas@prodiving.asia</a>
-                  <Button size="sm" variant="outline" onClick={() => copyToClipboard("bas@prodiving.asia")}>
-                    Copy
-                  </Button>
-                </div>
-              </div>
-
-              <div>
-                <p className="text-sm font-medium">Message</p>
-                <textarea
-                  readOnly
-                  value={`Subject: Contact Form: ${formData.name}\n\n${formData.message}`}
-                  className="w-full rounded-md border px-3 py-2 text-sm"
-                  rows={6}
-                />
-                <div className="mt-2">
-                  <Button size="sm" variant="outline" onClick={() => copyToClipboard(`Subject: Contact Form: ${formData.name}\n\n${formData.message}`)}>
-                    Copy Message
-                  </Button>
-                </div>
-              </div>
-            </div>
-
-            <DialogFooter className="mt-4">
-              <Button asChild>
-                <a href={`mailto:bas@prodiving.asia?subject=${encodeURIComponent(`Contact Form: ${formData.name}`)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`}>Open Mail Client</a>
-              </Button>
-              <Button variant="ghost" onClick={() => setIsFallbackOpen(false)}>Close</Button>
-            </DialogFooter>
-          </DialogContent>
-        </Dialog>
     </section>
   );
 };
