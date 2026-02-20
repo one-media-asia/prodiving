@@ -14,24 +14,9 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/divemaster" element={<DivemasterPage />} />
-          <Route path="/assistant-instructor" element={<AssistantInstructorPage />} />
-          <Route path="/instructor" element={<InstructorPage />} />
-          <Route path="/idc-staff" element={<IDCStaffPage />} />
-          <Route path="/technical-diving" element={<TechnicalDivingPage />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <div className="min-h-screen bg-red-500 text-white flex items-center justify-center">
+    <h1 className="text-4xl font-bold">App is Working!</h1>
+  </div>
 );
 
 export default App;
