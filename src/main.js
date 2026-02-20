@@ -1,6 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App.tsx";
+import { createRoot } from "react-dom/client";
+import App from "./App.js";
 import "./index.css";
 
 console.log("Main.js loaded");
@@ -8,7 +8,8 @@ console.log("Main.js loaded");
 const container = document.getElementById("root");
 if (container) {
   try {
-    ReactDOM.render(React.createElement(App), container);
+    const root = createRoot(container);
+    root.render(<App />);
     console.log("App rendered successfully");
   } catch (error) {
     console.error("Error rendering App:", error);
