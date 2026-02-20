@@ -7,8 +7,14 @@ console.log("Main.tsx loaded");
 
 const container = document.getElementById("root");
 if (container) {
-  const root = createRoot(container);
-  root.render(<App />);
+  try {
+    const root = createRoot(container);
+    root.render(<App />);
+    console.log("App rendered successfully");
+  } catch (error) {
+    console.error("Error rendering App:", error);
+    container.innerHTML = "<h1 style='color: red;'>Error loading React app</h1>";
+  }
 } else {
   console.error("Root element not found");
 }
