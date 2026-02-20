@@ -10,16 +10,8 @@ import LiveChat from "@/components/LiveChat";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <Hero />
-      <DivingCoursesSection />
-      <DiveSitesSection />
-      <GallerySection />
-      <FAQSection />
-      <ContactSection />
-      <Footer />
-      <LiveChat />
+    <div className="min-h-screen bg-blue-500 text-white flex items-center justify-center">
+      <h1 className="text-4xl font-bold">Pro Diving Site is Loading!</h1>
     </div>
   );
 };
