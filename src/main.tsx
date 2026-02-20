@@ -8,7 +8,7 @@ console.log("Main.tsx loaded");
 const container = document.getElementById("root");
 if (container) {
   const root = createRoot(container);
-  root.render(React.createElement(App));
+  root.render(<App />);
 } else {
   console.error("Root element not found");
 }
