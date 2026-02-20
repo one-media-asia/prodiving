@@ -90,7 +90,7 @@ const ContactSection = () => {
                 <Mail className="w-5 h-5 text-primary-foreground" />
               </div>
               <div>
-                <h3 className="font-heading font-bold text-foreground mb-1"> right click on email below and select open in mail.google or your client Email</h3>
+                <h3 className="font-heading font-bold text-foreground mb-1"> right click on email below and select open in mail.google  or your client Email</h3>
                 <a href="mailto:bas@prodiving.asia"
                   className="text-primary hover:text-primary/80 transition-colors"
                 >

@@ -21,7 +21,7 @@ const instructors = [
     specialties: ["Technical Diving", "Deep Dives", "Night Dives"],
     experience: "14+ Years",
   },
- 
+ n
 ];
 
 const InstructorsSection = () => {
