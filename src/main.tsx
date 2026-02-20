@@ -9,7 +9,10 @@ const container = document.getElementById("root");
 if (container) {
   try {
     const root = createRoot(container);
-    root.render(<App />);
+    const element = React.createElement("div", {
+      className: "min-h-screen bg-red-500 text-white flex items-center justify-center"
+    }, React.createElement("h1", { className: "text-4xl font-bold" }, "App is Working!"));
+    root.render(element);
     console.log("App rendered successfully");
   } catch (error) {
     console.error("Error rendering App:", error);
