@@ -55,6 +55,7 @@ export default {
           start: "hsl(var(--ocean-start))",
           mid: "hsl(var(--ocean-mid))",
           end: "hsl(var(--ocean-end))",
+          dark: "hsl(var(--ocean-end))",
         },
         coral: "hsl(var(--coral))",
         sand: "hsl(var(--sand))",
