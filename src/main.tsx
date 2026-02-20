@@ -1,5 +1,5 @@
 import React from "react";
-simport ReactDOM from "react-dom";
+import ReactDOM from "react-dom";
 import App from "./App.tsx";
 // import "./index.css";
 
