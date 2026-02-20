@@ -8,7 +8,7 @@ const Header = () => {
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
-#test
+
   const handleNavClick = (href: string) => {
     // Always scroll to top when navigating
     window.scrollTo({ top: 0, behavior: 'smooth' });
