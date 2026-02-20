@@ -1,7 +1,9 @@
-const App = () => (
-  <div className="min-h-screen bg-red-500 text-white flex items-center justify-center">
-    <h1 className="text-4xl font-bold">App is Working!</h1>
-  </div>
-);
+function App() {
+  return React.createElement("div", {
+    style: { minHeight: "100vh", backgroundColor: "red", color: "white", display: "flex", alignItems: "center", justifyContent: "center" }
+  }, React.createElement("h1", { style: { fontSize: "2rem", fontWeight: "bold" } }, "App is Working!"));
+}
+
+export default App;
 
 export default App;
