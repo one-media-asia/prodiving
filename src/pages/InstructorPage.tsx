@@ -357,5 +357,3 @@ const InstructorPage = () => {
 };
 
 export default InstructorPage;
-
-export default InstructorPage;
