@@ -3,12 +3,12 @@ import ReactDOM from "react-dom";
 import App from "./App.tsx";
 // import "./index.css";
 
-console.log("Main.tsx loaded");
+console.log("Main.js loaded");
 
 const container = document.getElementById("root");
 if (container) {
   try {
-    ReactDOM.render(<App />, container);
+    ReactDOM.render(React.createElement(App), container);
     console.log("App rendered successfully");
   } catch (error) {
     console.error("Error rendering App:", error);
