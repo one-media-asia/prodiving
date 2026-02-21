@@ -358,36 +358,6 @@ const TechnicalDivingPage = () => {
 };
 
 export default TechnicalDivingPage;
-              <h2 className="text-3xl font-bold text-ocean-900 mb-8 text-center">
-                Course Overview
-              </h2>
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-600" />
-                      What You'll Learn
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-3">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                        <span>Advanced gas management</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                        <span>Decompression procedures</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                        <span>Mixed gas diving techniques</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                        <span>Cave and wreck penetration</span>
-                      </li>
-                      <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
                         <span>Emergency procedures</span>
                       </li>
