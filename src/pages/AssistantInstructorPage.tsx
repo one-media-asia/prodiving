@@ -355,5 +355,3 @@ const AssistantInstructorPage = () => {
 };
 
 export default AssistantInstructorPage;
-
-export default AssistantInstructorPage;
