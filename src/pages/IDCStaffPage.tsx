@@ -357,5 +357,3 @@ const IDCStaffPage = () => {
 };
 
 export default IDCStaffPage;
-
-export default IDCStaffPage;
