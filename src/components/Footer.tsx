@@ -121,9 +121,14 @@ const Footer = () => {
             <p className="text-primary-foreground/70 text-sm">
               © Copyright One Media Asia | Pro Diving Asia
             </p>
-            <p className="text-primary-foreground/70 text-sm flex items-center gap-1">
-              Made with <Heart className="w-4 h-4 text-coral fill-coral" /> in Thailand
-            </p>
+            <div className="flex flex-col md:flex-row items-center gap-4">
+              <p className="text-primary-foreground/70 text-sm flex items-center gap-1">
+                Made with <Heart className="w-4 h-4 text-coral fill-coral" /> in Thailand
+              </p>
+              <p className="text-primary-foreground/70 text-sm">
+                - Bas
+              </p>
+            </div>
           </div>
         </div>
       </div>
